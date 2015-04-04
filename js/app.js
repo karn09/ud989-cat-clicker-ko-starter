@@ -19,6 +19,8 @@ var ViewModel = function() {
     }
   }, this);
   
+  this.nicknames = ko.observable(['a', 'b', 'c']);
+  
 }
 
 ko.applyBindings(new ViewModel());

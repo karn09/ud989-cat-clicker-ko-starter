@@ -12,6 +12,14 @@
         <h3 data-bind="text: level"></h2>
         <div data-bind="text: clickCount" id="cat-count"></div>
         <img id="cat-img" src="" alt="cute cat" data-bind="click: incrementCounter, attr: {src: imgSrc}">
+        
+      <p>Nicknames:</p>
+        <ul data-bind="foreach: nicknames">
+          <li>
+            <span data-bind="text: $data"></span>
+          </li>
+        </ul>
+          
 
     </div>
     <script src="js/lib/knockout-3.2.0.js"></script>
